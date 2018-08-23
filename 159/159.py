@@ -6,11 +6,10 @@ class Solution:
     def findMin(self, nums):
         # write your code here
         start, end =  0, len(nums) -1
-        last_index = end
         while start < end:
             mid = start + (end - start) // 2   
             
-            if nums[mid] < nums[last_index]:
+            if nums[mid] < nums[end]:
                 end = mid
             else: 
                 start = mid + 1    
