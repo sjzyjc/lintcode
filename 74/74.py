@@ -4,8 +4,7 @@ class Solution:
     @return: An integer which is the first bad version.
     """
     def findFirstBadVersion(self, n):
-        # write your code here
-        
+        # write your code 
         if n is None or n < 1:
             return -1
         

@@ -4,10 +4,10 @@ class Solution:
     @param target: An integer
     @param k: An integer
     @return: an integer array
+    T: logN + K S: 1
     """
     def kClosestNumbers(self, A, target, k):
         left = self.findLastSmaller(A, target)
-        print(left)
         right = left + 1
 
         ret = []
@@ -51,5 +51,3 @@ class Solution:
 
         return False        
 
-sl = Solution()
-print(sl.kClosestNumbers([22,25,100,209,1000,1110,1111],15,5))

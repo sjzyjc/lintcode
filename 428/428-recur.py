@@ -17,7 +17,7 @@ class Solution:
         if n == 0:
             return 1
 
-        half = self.fastPow(x, n // 2)
+        half = self.fastPow(x, n >> 1)
         if n % 2 == 0:
             return half * half
         else:

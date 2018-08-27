@@ -2,6 +2,7 @@ class Solution:
     """
     @param nums: An integer array
     @return: nothing
+    T: N S: 1
     """
     def recoverRotatedSortedArray(self, nums):
         # write your code here
@@ -26,7 +27,6 @@ class Solution:
             nums[start:end+1] = nums[end::-1]
         else:    
             nums[start:end+1] = nums[end:start-1:-1]
-        print(nums)    
 
 sl = Solution()
-print(sl.recoverRotatedSortedArray([5,4,1,2,3]))        
+print(sl.recoverRotatedSortedArray([4,5,1,2,3]))        
