@@ -21,7 +21,6 @@ class Solution:
                 if source[i + j] != target[j]:
                     break
 
-                print(i + j)
                 if j == len(target) - 1 and source[i + j] == target[j]:
                     return i
 

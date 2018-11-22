@@ -3,6 +3,8 @@ class Solution:
     @param nums: an array of Integer
     @param target: an integer
     @return: [index1 + 1, index2 + 1] (index1 < index2)
+    reduce space complexity to O(1)
+    
     """
     def twoSum7(self, nums, target):
         # write your code here
