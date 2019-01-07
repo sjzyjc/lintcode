@@ -3,6 +3,7 @@ class Solution:
     @param pages: an array of integers
     @param k: An integer
     @return: an integer
+    k * n * n
     """
     def copyBooks(self, pages, k):
         # write your code here

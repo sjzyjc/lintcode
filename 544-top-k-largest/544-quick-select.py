@@ -3,16 +3,17 @@ class Solution:
     @param nums: an integer array
     @param k: An integer
     @return: the top k largest numbers in array
+    n + klogk
+    1
     """
     def topk(self, nums, k):
         # write your code here
         if not nums or k <= 0:
             return []
             
-        self.quickSelect(nums, k, 0, len(nums) - 1)
+        self.quickSelect(nums, len(nums) - k, 0, len(nums) - 1)
         
-        print(nums)
-        ans = nums[:k]
+        ans = nums[len(nums) - k:]
         ans.sort(reverse = True)
         return ans
         
@@ -24,7 +25,6 @@ class Solution:
         left, right = start, end
         
         while left <= right:
-            print(left, right)
             while left <= right and nums[left] < pivot:
                 left += 1
             
@@ -41,7 +41,3 @@ class Solution:
         
         if k <= right:
             self.quickSelect(nums, k, start, right)
-            
-        
-sl = Solution()
-sl.topk([3,10,1000,-99,4,100], 3)
